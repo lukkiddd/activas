@@ -1,0 +1,17 @@
+# Python
+_pycache__/
+.pytest_cache
+
+# VSCode
+.vscode
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Mac OS X
+*.DS_Store
