@@ -10,3 +10,17 @@ class Activas(Resource):
         return {
             "message": "Hello Activas!"
         }
+
+
+@api.route('/data')
+class Data(Resource):
+    def get(self):
+        return {
+            "data": []
+        }
+
+
+@api.route('/save')
+class Save(Resource):
+    def post(self):
+        return {}
