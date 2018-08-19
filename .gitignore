@@ -1,3 +1,7 @@
+# JS
+yarn.lock
+node_modules
+
 # Python
 __pycache__/
 .pytest_cache
