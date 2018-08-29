@@ -1,3 +1,5 @@
+import json
+import os
 from flask_restplus import Namespace, Resource
 
 
@@ -15,9 +17,11 @@ class Activas(Resource):
 @api.route('/data')
 class Data(Resource):
     def get(self):
-        return {
-            "data": []
-        }
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        data_path = os.path.join(dir_path, '../data/dataset01.json')
+        with open(data_path) as f:
+            data = json.load(f)
+        return data
 
 
 @api.route('/save')
