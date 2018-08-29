@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    Hello Activas
+    <activas></activas>
   </div>
 </template>
 
 <script>
+import Activas from './views/Activas.vue'
 
 export default {
   name: 'app',
-  components: {}
+  components: {
+    'activas': Activas
+  }
 }
 </script>
 
